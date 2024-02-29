@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, DashboardComponent],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  imports: [RouterLink, RouterOutlet],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class AppComponent {
+export class HomeComponent {
   fechaActual: string = '';
   horaActual: string = '';
   ampm: string = '';
@@ -62,7 +61,7 @@ export class AppComponent {
     this.fechaActual = `${dayWeek}, ${day}/${
       monthOfYear < 10 ? `0${monthOfYear}` : `${monthOfYear}`
     }`;
-    this.horaActual = `${hour < 10 ? `0${hour}` : hour}:${
+    this.horaActual = `${hour}:${
       minutes < 10 ? `0${minutes}` : minutes
     }`;
   }

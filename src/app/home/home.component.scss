@@ -1,0 +1,39 @@
+div {
+  font-family: "Istok Web", sans-serif;
+
+  .horActual {
+    text-align: center;
+    font-size: 82px;
+    margin: 0px;
+    padding-top: 30px;
+  }
+  .fechActual {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom: 18px;
+    font-family: sans-serif;
+  }
+  .boxCategory {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    .boxImage {
+      height: 55px;
+      filter: drop-shadow(2px 2px 0px #777);
+
+      > img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:hover {
+        filter: drop-shadow(-2px -2px 3px #777);
+      }
+    }
+
+    
+  }
+}

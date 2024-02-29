@@ -1,0 +1,70 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .titleAplication {
+    margin: 0;
+    font-size: 50px;
+    text-decoration: underline 2px #555;
+    font-family: "Istok Web", sans-serif;
+    background: linear-gradient(43deg, #fff, #000);
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 45px;
+  }
+
+  article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Istok Web", sans-serif;
+    color: #fff;
+
+    .marco {
+      position: absolute;
+      border-radius: 20px;
+      width: 26%;
+      height: 60%;
+      background-color: #1118;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+
+      .boxHeader {
+        display: flex;
+        padding: 14px 16px;
+        justify-content: space-between;
+
+        .boxBatery {
+          display: flex;
+
+          > img {
+            height: 25px;
+          }
+          > span {
+            font-size: 14px;
+            margin: 0px;
+            display: grid;
+            place-items: center;
+            padding: 0px 6px;
+          }
+        }
+        .dateCurrent {
+          margin: 0px;
+          font-size: 14px;
+          padding: 4px 0px 0px 8px;
+        }
+      }
+      .container {
+        height: 100%;
+      }
+    }
+  }
+}
