@@ -1,0 +1,25 @@
+<h1 class="titleApp">SolvThink</h1>
+<div>
+  <span>{{ num1 }}</span>
+  <span>{{optionOperator}}</span>
+  <span>{{ num2 }}</span>
+</div>
+<div class="boxOptions">
+  <button
+    class="success"
+    [ngClass]="{ firstButton: position, secondButton: !position }"
+    (click)="handleCorrectAnswer(true)"
+  >
+    {{ result }}
+  </button>
+  <button
+    class="fake"
+    [ngClass]="{ firstButton: !position, secondButton: position }"
+    (click)="handleCorrectAnswer(false)"
+  >
+    {{ fake }}
+  </button>
+  <p>{{ message }}</p>
+</div>
+
+<a routerLink="/configuration"> Configuración </a>

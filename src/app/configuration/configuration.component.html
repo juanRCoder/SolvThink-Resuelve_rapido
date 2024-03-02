@@ -1,0 +1,10 @@
+<div>
+  <label>Operador:</label>
+  <select [(ngModel)]="currentOperator">
+    @for(op of operators; track op.id) {
+    <option>{{ op.operator }}</option>
+    }
+  </select>
+</div>
+<p>{{ currentOperator }}</p>
+<span routerLink="/" (click)="enviarString()">Dashboard</span>
