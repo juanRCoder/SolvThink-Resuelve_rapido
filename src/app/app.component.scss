@@ -7,15 +7,26 @@ main {
 
   .background {
     border-radius: 20px;
-    width: 30%;
-    height: 80%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    );
     display: flex;
     flex-direction: column;
 
     .appContainer {
       height: 100%;
       width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    .background {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
     }
   }
 }

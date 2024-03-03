@@ -9,7 +9,7 @@
   </div>
   <div class="operatorContainer">
     <label>Operador:</label>
-    <select class="select" [(ngModel)]="currentOperator">
+    <select class="select" title="select" name="select" [(ngModel)]="currentOperator">
       @for(op of operators; track op.id) {
       <option>{{ op.operator }}</option>
       }

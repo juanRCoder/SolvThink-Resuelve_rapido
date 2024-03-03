@@ -1,21 +1,19 @@
 .titleApp {
-  font-family: "Noto Sans Javanese", sans-serif;
+  font-family: Inter;
   background: linear-gradient(#ff7b8d, #ff007c);
   background-clip: text;
   color: transparent;
   text-align: center;
   letter-spacing: -5px;
   font-size: 70px;
-  height: 18%;
-  margin: 5px auto 5px auto;
+  margin: 20px auto 10px auto;
 }
 .boxOperation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   margin: 10px auto 30px auto;
-  width: 80%;
-  height: 21%;
+  width: 85%;
   background-color: rgba(255, 255, 255, 0.6509803922);
   border-radius: 10px;
   position: relative;
@@ -70,11 +68,11 @@
 .boxOptions {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 30%;
-  margin: 10px auto 30px;
+  width: 85%;
+  margin: 10px auto 10px;
 
   > button {
+    padding: 10px 0px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -94,13 +92,15 @@
 }
 .footerContainer {
   display: flex;
-  height: 10%;
-  width: 80%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 0px auto 30px;
 
   &_text {
     font-family: "Inter", sans-serif;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     > p {
       margin: 0px;
@@ -117,8 +117,8 @@
     border-radius: 5px;
 
     .iconSvg {
-      height: 75%;
-      width: 75%;
+      height: 80%;
+      width: 100%;
       fill: #fff;
     }
 
@@ -128,10 +128,40 @@
   }
 }
 
+//boxPrincipal
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 //Order de btns
 .firstButton {
   order: 1;
 }
 .secondButton {
   order: 2;
+}
+@media screen and (max-width: 350px) {
+  .titleApp {
+    font-size: 60px;
+  }
+  .boxOperation {
+    width: 90%;
+
+    .num1 {
+      margin-left: 20px;
+    }
+    .num2 {
+      margin-right: 20px;
+    }
+
+    > span {
+      font-size: 70px;
+    }
+  }
+  .boxOptions, .boxOptions { 
+    width: 90%;
+  }
 }
