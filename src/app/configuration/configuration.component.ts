@@ -17,7 +17,10 @@ export class ConfigurationComponent {
     {id: 4, operator: '/'},
   ];
   currentOperator: string = '';
-  sharedString: string = 'Hola, esto es un string compartido';
+
+  ngOnInit() {
+    this.currentOperator = '+';
+  }
 
    enviarString() {
     localStorage.setItem('sharedString', this.currentOperator);

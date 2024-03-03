@@ -26,7 +26,7 @@ export class DashboardComponent {
   //obtener operacion del localStorage
   optionOperator: string = '';
   ngOnInit() {
-    this.optionOperator = localStorage.getItem('sharedString') || '';
+    this.optionOperator = localStorage.getItem('sharedString') || '+';
     this.realizarOperacion();
   }
 
@@ -39,6 +39,10 @@ export class DashboardComponent {
 
   //Respuesta Correcta ()
   realizarOperacion() {
+
+    this.numOne = this.num1 < 10 ? `0${this.num1}` : `${this.num1}`; 
+    this.numTwo = this.num2 < 10 ? `0${this.num2}` : `${this.num2}`; 
+
     switch (this.optionOperator) {
       case '+':
         this.result = this.num1 + this.num2;
@@ -55,6 +59,8 @@ export class DashboardComponent {
       case '*':
         this.num1 = this.getRandomInt(10);
         this.num2 = this.getRandomInt(12);
+        this.numOne = this.num1 < 10 ? `0${this.num1}` : `${this.num1}`; 
+        this.numTwo = this.num2 < 10 ? `0${this.num2}` : `${this.num2}`; 
         this.result = this.num1 * this.num2;
         this.fakeNumber = this.result.toString();
         this.fake = this.result + parseInt(this.fakeNumber[0], 10) || 0;
@@ -63,6 +69,8 @@ export class DashboardComponent {
       case '/':
         this.num1 = this.getRandomIntForDivision(10, 100);
         this.num2 = this.getRandomIntForDivision(1, 10);
+        this.numOne = this.num1 < 10 ? `0${this.num1}` : `${this.num1}`; 
+        this.numTwo = this.num2 < 10 ? `0${this.num2}` : `${this.num2}`; 
         this.result = parseFloat((this.num1 / this.num2).toFixed(1));
         this.fakeNumber = this.result.toString();
         this.fake = parseFloat((this.result + parseInt(this.fakeNumber[0], 10) || 0).toFixed(1));
@@ -78,11 +86,21 @@ export class DashboardComponent {
   click: any;
   message: string = '';
 
+  // Clases para aplicar a <div class="message">
+  isSuccess: boolean = false;
+  isFail: boolean = false;
+
+  
+  numOne: string = '';
+  numTwo: string = '';
+
   //funcion reload de ejercicios
   handleCorrectAnswer(click: boolean) {
     // Generar nuevos números aleatorios
-    this.num1 = this.getRandomInt(50);
-    this.num2 = this.getRandomInt(20);
+    this.num1 = this.getRandomInt(50); 
+    this.num2 = this.getRandomInt(50);
+    this.numOne = this.num1 < 10 ? `0${this.num1}` : `${this.num1}`; 
+    this.numTwo = this.num2 < 10 ? `0${this.num2}` : `${this.num2}`; 
 
     // Actualizar la respuesta correcta y la respuesta incorrecta
     this.realizarOperacion();
@@ -91,6 +109,17 @@ export class DashboardComponent {
     if (Math.random() > 0.5) {
       this.position = !this.position;
     }
+    // Mostrar mensaje y aplicar clases
     this.message = click ? 'Correcto!' : 'Incorrecto!';
+    this.isSuccess = click;
+    this.isFail = !click;
+
+    // Reiniciar las clases después de 1 segundo
+    setTimeout(() => {
+      this.isSuccess = false;
+      this.isFail = false;
+      this.message = '';
+    }, 500);
+    
   }
 }

@@ -9,18 +9,121 @@
   height: 18%;
   margin: 5px auto 5px auto;
 }
+.boxOperation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 10px auto 30px auto;
+  width: 80%;
+  height: 21%;
+  background-color: rgba(255, 255, 255, 0.6509803922);
+  border-radius: 10px;
+  position: relative;
+
+  .num1 {
+    margin-left: 30px;
+  }
+  .num2 {
+    margin-right: 30px;
+  }
+
+  > span {
+    font-family: sans-serif;
+    font-size: 80px;
+    height: 100%;
+    font-weight: 700;
+    color: #fa4961;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .messageSuccess {
+    opacity: 1;
+    background-color: #57c34a;
+  }
+  .messageFail {
+    opacity: 1;
+    background-color: #e91e63;
+  }
+  .messageNeutral {
+    opacity: 0;
+    background-color: transparent;
+  }
+}
 .boxOptions {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  height: 30%;
+  margin: 10px auto 30px;
 
-  .success {
-    &:active {
-      background-color: rgb(62, 241, 92);
+  > button {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fa4961;
+    color: #fff;
+    height: 36%;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 0px 0px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fa4961ad;
     }
   }
-  .fake {
-    &:active {
-      background-color: rgb(239, 62, 94);
+}
+.footerContainer {
+  display: flex;
+  height: 10%;
+  width: 80%;
+  margin: 0 auto;
+
+  &_text {
+    font-family: "Inter", sans-serif;
+    width: 80%;
+
+    > p {
+      margin: 0px;
+      font-size: 22px;
+      color: #fa4961;
+    }
+  }
+  > a {
+    width: 20%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #fa4961;
+    border-radius: 5px;
+
+    .iconSvg {
+      height: 75%;
+      width: 75%;
+      fill: #fff;
+    }
+
+    &:hover > .iconSvg {
+      filter: drop-shadow(2px 2px 6px #fff);
     }
   }
 }
