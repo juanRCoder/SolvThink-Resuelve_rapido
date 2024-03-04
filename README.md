@@ -1,27 +1,49 @@
-# SmartWatch
+<img src="./src/assets/bannerProject.png" alt="Logo" height="350" width="100%">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+## SolvThink: Resuelve/Piensa rapido
 
-## Development server
+Es un juego de pensamiento rapido, el cual el usuario podra resolver operaciones basicas como sumar, restar, multiplicar y dividir.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 📌 Proposito:
 
-## Code scaffolding
+Lo principal es ayudar al usuario a resolver operaciones matematicas rapidas el cual tiene que resolver al comprar un producto, sacar una cuenta de restaurant, entre otras cosas.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+WebSite: [App SolvThink](https://solvthink.netlify.app/)
 
-## Build
+## 🛠 Tecnologías:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Este proyecto fue realizado con las siguientes tecnologias y dependencias:
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+  [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.dev/)
+  [![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/docs/latest/api/)
+  [![Netifly](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://docs.netlify.com/)
+  [![SCSS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/documentation/syntax/)
 
-## Running unit tests
+## 📈 Diagrama de flujo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Este es un pequeño diagrama del planteamiento y seguimiento estatico del proyecto.
 
-## Running end-to-end tests
+<div align="center">
+  <img src="./src/assets/diagramProject.png" alt="diagramProject" height="400" >
+</div>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📱💻 Diseño responsivo (mobile & tablet):
 
-## Further help
+- Estos son los diferentes vistas para cualquier dispositivo.
+<div align="center">
+   <img src="./src/assets/smartphone.png" alt="Logo" width="250" height="400" >
+  <img src="./src/assets/portatil.png" alt="Logo" width="500" height="400" > 
+</div>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🧑 Autor: Juan Ramirez
+
+- Linkedin: [@Juan Ramirez](https://www.linkedin.com/in/juan-ramirez-490b84271/)
+- Instagram: [@juanrcoder](https://www.instagram.com/juanrcoder/)
+
+### Proyecto:
+
+- WebSite: [App SolvThink](https://solvthink.netlify.app/)
+
+## Licence:
+
+- Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
