@@ -13,7 +13,15 @@
       padding: 0;
       box-sizing: border-box;
       height: 100vh;
-      background: linear-gradient(to right, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-image: url(./assets/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    @media screen and (max-width: 500px) {
+      body {
+        background-repeat: repeat;
+        background-size: contain;
+      }
     }
   </style>
   <body>
