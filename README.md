@@ -1,4 +1,4 @@
-<img src="./src/assets/bannerProject.png" alt="Logo" height="150" width="100%">
+<img src="./src/assets/bannerProject.png" alt="Logo"  width="100%">
 
 ## SolvThink: Resuelve/Piensa rapido
 
