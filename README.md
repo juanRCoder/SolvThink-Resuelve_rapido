@@ -31,8 +31,8 @@ WebSite: [https://solvthink.netlify.app](https://solvthink.netlify.app/)
 
 - Estos son los diferentes vistas para cualquier dispositivo.
 <div align="center">
-   <img src="./src/assets/smartphone.png" alt="Logo" width="250" height="380" >
-  <img src="./src/assets/portatil.png" alt="Logo" width="500" height="380" > 
+   <img src="./src/assets/smartphone.png" alt="Logo" width="250" />
+  <img src="./src/assets/portatil.png" alt="Logo" width="500" /> 
 </div>
 
 ## 🧑 Autor: Juan Ramirez
