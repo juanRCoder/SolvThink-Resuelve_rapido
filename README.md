@@ -24,7 +24,7 @@ WebSite: [https://solvthink.netlify.app](https://solvthink.netlify.app/)
 - Este es un pequeño diagrama del planteamiento y seguimiento estatico del proyecto.
 
 <div align="center">
-  <img src="./src/assets/diagramProject.png" alt="diagramProject" height="400" >
+  <img src="./src/assets/diagramProject.png" alt="diagramProject">
 </div>
 
 ## 📱💻 Diseño responsivo (mobile & tablet):
