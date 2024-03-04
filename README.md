@@ -1,4 +1,4 @@
-<img src="./src/assets/bannerProject.png" alt="Logo" height="350" width="100%">
+<img src="./src/assets/bannerProject.png" alt="Logo" height="200" width="100%">
 
 ## SolvThink: Resuelve/Piensa rapido
 
@@ -8,7 +8,7 @@ Es un juego de pensamiento rapido, el cual el usuario podra resolver operaciones
 
 Lo principal es ayudar al usuario a resolver operaciones matematicas rapidas el cual tiene que resolver al comprar un producto, sacar una cuenta de restaurant, entre otras cosas.
 
-WebSite: [App SolvThink](https://solvthink.netlify.app/)
+WebSite: [https://solvthink.netlify.app](https://solvthink.netlify.app/)
 
 ## 🛠 Tecnologías:
 
@@ -31,8 +31,8 @@ WebSite: [App SolvThink](https://solvthink.netlify.app/)
 
 - Estos son los diferentes vistas para cualquier dispositivo.
 <div align="center">
-   <img src="./src/assets/smartphone.png" alt="Logo" width="250" height="400" >
-  <img src="./src/assets/portatil.png" alt="Logo" width="500" height="400" > 
+   <img src="./src/assets/smartphone.png" alt="Logo" width="250" height="380" >
+  <img src="./src/assets/portatil.png" alt="Logo" width="400" height="380" > 
 </div>
 
 ## 🧑 Autor: Juan Ramirez
@@ -42,7 +42,7 @@ WebSite: [App SolvThink](https://solvthink.netlify.app/)
 
 ### Proyecto:
 
-- WebSite: [App SolvThink](https://solvthink.netlify.app/)
+- WebSite: [https://solvthink.netlify.app](https://solvthink.netlify.app/)
 
 ## Licence:
 
